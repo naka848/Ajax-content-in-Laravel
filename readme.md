@@ -70,3 +70,32 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Memo
+
+
+
+
+
+### composer.lock を基にライブラリをインストール
+
+- インストールされたプログラムは、composer.jsonと同じ階層にあるvendorフォルダ内に配置される
+
+```
+composer install
+```
+
+### アプリケーションキを設定
+
+- .envファイル作成
+
+```
+cp .env.example .env
+```
+
+- .envのAPP_KEYをセット
+
+```
+php artisan key:generate
+```
+
